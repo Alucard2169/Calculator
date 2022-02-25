@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #00DBDE;
+  background-image: -webkit-gradient(linear, left top, right top, from(#00DBDE), to(#FC00FF));
+  background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+}
+
+button {
+  padding: 1rem;
+  border: none;
+  color: black;
+  -webkit-transition: all 100ms;
+  transition: all 100ms;
+}
+
+button:hover {
+  background-color: #FC00FF;
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.clicked {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0 0 10px #383838;
+          box-shadow: 0 0 10px #383838;
+}
+
+.container {
+  width: 30%;
+}
+
+.display {
+  width: 100%;
+  min-height: 100px;
+  max-height: auto;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.3);
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.display .previous {
+  font-size: 1rem;
+}
+
+.display .current {
+  font-size: 1.8rem;
+}
+
+.buttons {
+  margin-top: .5rem;
+  gap: .5rem;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+}
+
+.span {
+  grid-column: span 2;
+}
+
+@media only screen and (min-width: 370px) {
+  .display {
+    width: 100%;
+  }
+  .container {
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
