@@ -2,8 +2,10 @@
 
 ## I wanted to improve my Javascript Skill set and A Calculator seemed the best app that will use some really good functionality and fun to build.
 
+![preview](https://github.com/Alucard2169/Calculator/blob/main/SharedScreenshot.jpg)
 
-# so let's break things into peaces one by one.
+
+# so let's break things into pieces one by one.
 
 ### first let's talk about the html
 - The HTML file contains just the basic buttons and the container that is my whole calculator.
